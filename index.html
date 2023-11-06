@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-sketch by Menye</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="sidePanel">
+            <div class="settingsPane">
+                <div class="setHead"><h2>Customize</h2></div>
+                <div class="buttons">
+                    <div class="buttonArray">
+                        <button class="setColor black"></button>
+                        <button class="setColor red"></button>
+                        <button class="setColor yellow"></button>
+                        <button class="setColor blue"></button>
+                        <button class="setColor green"></button>
+                        <button class="setColor erase"></button>
+                    </div>
+                </div>
+                <div class="gridToggle">
+                    <button class="btn grid">Toggle Grid lines</button>
+                </div>
+                <div class="slider">
+                    <p>Select <abbr title="This is the number of pixels that will be displayed. Selecting 15 will give you a 15x15 drawing area">length</abbr>: <span class="selection"></span></p>
+                    <input type="range" min="10" max="60" value="20" name="ranger" id="r">
+                    <button class="setValue" onclick=setGrid()>Apply</button>
+                </div>
+            </div>
+        </div>
+        <div class="mainPane">
+            <div class="header"><h1>Pixel Painter v0.02</h1></div>
+            <div class="container"></div>
+        </div>
+    </div>
+    <div class="footer">Created by Menye. Made for desktop / Laptop computers.</div>
+</body>
+<script src="script.js"></script>
+</html>
