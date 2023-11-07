@@ -1,10 +1,32 @@
 const container = document.querySelector('.container');
+const mainContent = document.querySelector('.main');
 let lengthUnit = 10;
 let containerWidth = 600;
 let containerHeight = 600;
 let mode = "#000";
 let grid = 'border: 1px solid lightgray;';
 
+function isMobile(){
+    if (navigator.userAgent.match(/Android/i)
+         || navigator.userAgent.match(/webOS/i)
+         || navigator.userAgent.match(/iPhone/i)
+         || navigator.userAgent.match(/iPad/i)
+         || navigator.userAgent.match(/iPod/i)
+         || navigator.userAgent.match(/BlackBerry/i)
+         || navigator.userAgent.match(/Windows Phone/i)){
+        return true;
+    } else {
+        return false;
+    }
+}
+
+if (isMobile()){
+    mainContent.style.flexDirection = 'column-reverse';
+    containerHeight = 400;
+    containerWidth = 400
+} else {
+    //nothin
+}
 
 function draw(){
     while (container.firstChild){
