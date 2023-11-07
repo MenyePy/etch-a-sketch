@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column-reverse;
     margin-top: 5%;
     justify-content: center;
     gap: 10%;
